@@ -17,7 +17,8 @@ public class CustomerEndpoint {
     private CustomerService customerService;
 
     @PayloadRoot(namespace = "http://protocols.com/communication-platforms",
-            localPart = "getUserRequest")
+            localPart = "getCustomerRequest")
+
     @ResponsePayload
     public GetCustomerResponse getCustomerRequest(@RequestPayload GetCustomerRequest request) {
         GetCustomerResponse response = new GetCustomerResponse();

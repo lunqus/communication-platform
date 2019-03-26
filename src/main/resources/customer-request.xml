@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:us="http://http://protocols.com/communication-platforms">
+
+    <soapenv:Header/>
+    <soapenv:Body/>
+        <us:getCustomerRequest>
+            <us:name>Google</us:name>
+        </us:getCustomerRequest>
+    <soapenv:Body/>
+
+</soapenv:Envelope>
