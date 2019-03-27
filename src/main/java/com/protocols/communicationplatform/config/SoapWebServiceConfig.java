@@ -19,13 +19,13 @@ import org.springframework.xml.xsd.XsdSchema;
 @Configuration
 public class SoapWebServiceConfig extends WsConfigurerAdapter {
 
-//    @Bean
-//    public ServletRegistrationBean messageDispatcherServlet(ApplicationContext context) {
-//        MessageDispatcherServlet servlet = new MessageDispatcherServlet();
-//        servlet.setApplicationContext(context);
-//        servlet.setTransformWsdlLocations(true);
-//        return new ServletRegistrationBean(servlet, "/soapWS/*");
-//    }
+    @Bean
+    public ServletRegistrationBean messageDispatcherServlet(ApplicationContext context) {
+        MessageDispatcherServlet servlet = new MessageDispatcherServlet();
+        servlet.setApplicationContext(context);
+        servlet.setTransformWsdlLocations(true);
+        return new ServletRegistrationBean(servlet, "/soapWS/*");
+    }
 
     @Bean
     public XsdSchema customerSchema() {
